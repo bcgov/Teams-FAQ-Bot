@@ -152,6 +152,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
             List<AdaptiveAction> actionsList = new List<AdaptiveAction>
             {
                 // Adds the "Ask an expert" button.
+                /*
                 new AdaptiveSubmitAction
                 {
                     Title = Strings.AskAnExpertButtonText,
@@ -167,7 +168,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         KnowledgeBaseAnswer = answer,
                     },
                 },
-
+                */
                 // Adds the "Share feedback" button.
                 new AdaptiveSubmitAction
                 {
