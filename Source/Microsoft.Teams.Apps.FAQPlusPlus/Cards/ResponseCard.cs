@@ -191,8 +191,13 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                    Title = Strings.MyServiceCentreButtonText,
                    Data = new ResponseCardPayload
                    {
-                        Type = "OpenUrl",
-                        Value = "https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing",
+                       MSTeams = new CardAction
+                       {
+                            Type = "OpenUrl",
+                            Value = "https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing",
+                       },
+                       UserQuestion = userQuestion,
+                       KnowledgeBaseAnswer = answer,
                    },
                },
             };
