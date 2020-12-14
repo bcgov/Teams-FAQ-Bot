@@ -185,6 +185,16 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         KnowledgeBaseAnswer = answer,
                     },
                 },
+                
+               new AdaptiveSubmitAction
+               {
+                   Title = Strings.MyServiceCentreButtonText,
+                   Data = new ResponseCardPayload
+                   {
+                        Type = "OpenUrl",
+                        Value = "https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing",
+                   },
+               },
             };
 
             return actionsList;
