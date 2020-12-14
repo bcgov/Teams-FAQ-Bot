@@ -601,4 +601,8 @@ I am your friendly Q&amp;A bot that helps you provide support to people who inte
     <value>How helpful is this app? (Required)</value>
     <comment>Feedback for App</comment>
   </data>
+  <data name="MyServiceCentreButtonText" xml:space="preserve">
+    <value>My Service Centre</value>
+    <comment>The Title for the Button that Opens My Service Centre</comment>
+  </data>
 </root>
