@@ -1150,5 +1150,14 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Properties {
                 return ResourceManager.GetString("Yes", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My Service Centre Button Text.
+        /// </summary>
+        public static string MyServiceCentreButtonText {
+            get {
+                return ResourceManager.GetString("MyServiceCentreButtonText", resourceCulture);
+            }
+        }
     }
 }
