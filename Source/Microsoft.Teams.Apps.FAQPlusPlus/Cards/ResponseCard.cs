@@ -185,30 +185,13 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         KnowledgeBaseAnswer = answer,
                     },
                 },
-                
+                // Adds the "My Service Centre" button.
                 new AdaptiveOpenUrlAction
                 {
                     Title = Strings.MyServiceCentreButtonText,
                     Url = new System.Uri("https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing"),
                     
                 },
-                /*
-               new AdaptiveSubmitAction
-               {
-                   Title = Strings.MyServiceCentreButtonText,
-                   Data = new ResponseCardPayload
-                   {
-                       MsTeams = new CardAction
-                       {
-                            Type = ActionTypes.OpenUrl,
-                            Title = "Opening My Service Centre",
-                            Value = "https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing",
-                            DisplayText = "Test",
-                       },
-                       UserQuestion = userQuestion,
-                       KnowledgeBaseAnswer = answer,
-                   },
-               },*/
             };
 
             return actionsList;
