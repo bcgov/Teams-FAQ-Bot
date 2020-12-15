@@ -186,6 +186,13 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                     },
                 },
                 
+                new AdaptiveOpenUrlAction
+                {
+                    Title = Strings.MyServiceCentreButtonText,
+                    Url = "https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing",
+                    
+                },
+                /*
                new AdaptiveSubmitAction
                {
                    Title = Strings.MyServiceCentreButtonText,
@@ -201,7 +208,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                        UserQuestion = userQuestion,
                        KnowledgeBaseAnswer = answer,
                    },
-               },
+               },*/
             };
 
             return actionsList;
