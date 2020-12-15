@@ -1,4 +1,4 @@
-﻿// <copyright file="ResponseCard.cs" company="Microsoft">
+// <copyright file="ResponseCard.cs" company="Microsoft">
 // Copyright (c) Microsoft. All rights reserved.
 // </copyright>
 
@@ -193,7 +193,8 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                    {
                        MsTeams = new CardAction
                        {
-                            Type = "OpenUrl",
+                            Type = ActionTypes.openUrl,
+                            Title = "Opening My Service Centre"
                             Value = "https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing",
                        },
                        UserQuestion = userQuestion,
