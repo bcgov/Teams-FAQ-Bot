@@ -194,7 +194,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                        MsTeams = new CardAction
                        {
                             Type = ActionTypes.openUrl,
-                            Title = "Opening My Service Centre"
+                            Title = "Opening My Service Centre",
                             Value = "https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing",
                        },
                        UserQuestion = userQuestion,
