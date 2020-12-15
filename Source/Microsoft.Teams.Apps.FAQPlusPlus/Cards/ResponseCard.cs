@@ -195,7 +195,8 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                        {
                             Type = ActionTypes.OpenUrl,
                             Title = "Opening My Service Centre",
-                            Url = "https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing",
+                            Value = "https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing",
+                            DisplayText = "Test"
                        },
                        UserQuestion = userQuestion,
                        KnowledgeBaseAnswer = answer,
