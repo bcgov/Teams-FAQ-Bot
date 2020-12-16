@@ -52,7 +52,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                             KnowledgeBaseAnswer = answer,
                         },
                     },
-                };
+                },
                 
                 // Adds the "My Service Centre" button.
                     new AdaptiveOpenUrlAction
