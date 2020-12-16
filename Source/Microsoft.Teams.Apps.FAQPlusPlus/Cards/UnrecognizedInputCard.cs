@@ -47,7 +47,6 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                                 Text = Constants.ShareFeedback,
                             },
                             UserQuestion = userQuestion,
-                            KnowledgeBaseAnswer = answer,
                         },
                     },
                     new AdaptiveOpenUrlAction
