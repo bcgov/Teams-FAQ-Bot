@@ -33,24 +33,33 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         Wrap = true,
                     },
                 },
+                
                 Actions = new List<AdaptiveAction>
                 {
+                // Adds the "Share Feedback" Button  
                     new AdaptiveSubmitAction
                     {
-                        Title = Strings.AskAnExpertButtonText,
+                        Title = Strings.ShareFeedbackButtonText,
                         Data = new ResponseCardPayload
                         {
                             MsTeams = new CardAction
                             {
                                 Type = ActionTypes.MessageBack,
-                                DisplayText = Strings.AskAnExpertDisplayText,
-                                Text = Constants.AskAnExpert,
+                                DisplayText = Strings.ShareFeedbackDisplayText,
+                                Text = Constants.ShareFeedback,
                             },
                             UserQuestion = userQuestion,
+                            KnowledgeBaseAnswer = answer,
                         },
                     },
-                },
-            };
+                    
+                // Adds the "My Service Centre" button.
+                    new AdaptiveOpenUrlAction
+                    {
+                        Title = Strings.MyServiceCentreButtonText,
+                        Url = new System.Uri("https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing"),  
+                    },
+                };
 
             return new Attachment
             {
