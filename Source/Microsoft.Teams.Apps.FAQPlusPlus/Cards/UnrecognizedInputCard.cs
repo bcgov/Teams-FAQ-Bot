@@ -37,13 +37,13 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                 {
                     new AdaptiveSubmitAction
                     {
-                        Title = Strings.ShareFeedbackButtonText,
+                        Title = Strings.DidntAnswerQuestionButtonText,
                         Data = new ResponseCardPayload
                         {
                             MsTeams = new CardAction
                             {
                                 Type = ActionTypes.MessageBack,
-                                DisplayText = Strings.ShareFeedbackDisplayText,
+                                DisplayText = Strings.DidntAnswerQuestionButtonText,
                                 Text = Constants.ShareFeedback,
                             },
                             UserQuestion = userQuestion,
