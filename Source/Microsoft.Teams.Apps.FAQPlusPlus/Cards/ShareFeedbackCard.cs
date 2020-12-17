@@ -86,7 +86,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                     },
                     new AdaptiveTextBlock
                     {
-                        Text = !string.IsNullOrWhiteSpace(data.UserQuestion) ? Strings.ResultsFeedbackText : Strings.FeedbackSubtitleText,
+                        Text = !string.IsNullOrWhiteSpace(data.UserQuestion) ? Strings.FeedbackSubtitleText : Strings.FeedbackSubtitleText,
                         Wrap = true,
                     },
                     new AdaptiveColumnSet
