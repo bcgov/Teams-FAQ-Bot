@@ -609,4 +609,8 @@ I am your friendly Q&amp;A bot that helps you provide support to people who inte
     <value>Didn't Answer Your Question?</value>
     <comment>The button title to lead to the share feedback form</comment>
   </data>
+  <data name="FeedbackSubtitleText" xml:space="preserve">
+    <value>Provide me feedback by filling the form below and clicking Share Feedback, or submit a ticket in My Service Centre by clicking My Serivce Centre</value>
+    <comment>A quick response message for the sharefeedback form</comment>
+  </data>
 </root>
