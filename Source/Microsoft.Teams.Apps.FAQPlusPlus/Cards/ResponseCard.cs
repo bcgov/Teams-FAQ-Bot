@@ -172,7 +172,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                 // Adds the "Share feedback" button.
                 new AdaptiveSubmitAction
                 {
-                    Title = Strings.ShareFeedbackButtonText,
+                    Title = Strings.DidntAnswerQuestionButtonText,
                     Data = new ResponseCardPayload
                     {
                         MsTeams = new CardAction
@@ -184,13 +184,6 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         UserQuestion = userQuestion,
                         KnowledgeBaseAnswer = answer,
                     },
-                },
-                // Adds the "My Service Centre" button.
-                new AdaptiveOpenUrlAction
-                {
-                    Title = Strings.MyServiceCentreButtonText,
-                    Url = new System.Uri("https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing"),
-                    
                 },
             };
 
