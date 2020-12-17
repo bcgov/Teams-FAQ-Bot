@@ -605,4 +605,8 @@ I am your friendly Q&amp;A bot that helps you provide support to people who inte
     <value>My Service Centre</value>
     <comment>The Title for the Button that Opens My Service Centre</comment>
   </data>
+  <data name="DidntAnswerQuestionButtonText" xml:space="preserve">
+    <value>Didn't Answer Your Question?</value>
+    <comment>The button title to lead to the share feedback form</comment>
+  </data>
 </root>
