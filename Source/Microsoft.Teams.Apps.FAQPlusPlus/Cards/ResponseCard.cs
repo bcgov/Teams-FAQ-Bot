@@ -178,7 +178,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                         MsTeams = new CardAction
                         {
                             Type = ActionTypes.MessageBack,
-                            DisplayText = Strings.ShareFeedbackDisplayText,
+                            DisplayText = Strings.DidntAnswerQuestionButtonText,
                             Text = Constants.ShareFeedback,
                         },
                         UserQuestion = userQuestion,
