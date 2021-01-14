@@ -772,11 +772,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Bots
 
             switch (text)
             {
-                case Constants.AskAnExpert:
-                    this.logger.LogInformation("Sending user ask an expert card");
-                    await turnContext.SendActivityAsync(MessageFactory.Attachment(AskAnExpertCard.GetCard())).ConfigureAwait(false);
-                    break;
-
+                
                 case Constants.ShareFeedback:
                     this.logger.LogInformation("Sending user feedback card");
                     await turnContext.SendActivityAsync(MessageFactory.Attachment(ShareFeedbackCard.GetCard())).ConfigureAwait(false);
