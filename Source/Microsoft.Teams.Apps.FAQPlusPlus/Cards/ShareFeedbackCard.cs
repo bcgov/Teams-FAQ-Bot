@@ -175,13 +175,13 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                             KnowledgeBaseAnswer = data.KnowledgeBaseAnswer,
                         },
                     },
-                    
+
                     // Adds the "My Service Centre" button.
                     new AdaptiveOpenUrlAction
                     {
                         Title = Strings.MyServiceCentreButtonText,
-                        Url = new System.Uri("https://ociomysc.service-now.com/sp?id=ocio_sr_itsm_landing"),
-                    
+                        Url = new System.Uri("https://ociomysc.service-now.com/sp?id=ocio_sr_incident_management"),
+
                     },
                 },
             };
