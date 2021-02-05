@@ -772,7 +772,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Bots
 
             switch (text)
             {
-                
+
                 case Constants.ShareFeedback:
                     this.logger.LogInformation("Sending user feedback card");
                     await turnContext.SendActivityAsync(MessageFactory.Attachment(ShareFeedbackCard.GetCard())).ConfigureAwait(false);
@@ -783,6 +783,11 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Bots
                     var userTourCards = TourCarousel.GetUserTourCards(this.appBaseUri);
                     await turnContext.SendActivityAsync(MessageFactory.Carousel(userTourCards)).ConfigureAwait(false);
                     break;
+
+                case Constants.TeamsHelp:
+                    this.logger.LogInformation("Sending user teams help card");
+                    var userHelpCards = TeamsHelpCard.GetUserHelpCards(this.appBaseUri);
+                    await turnContext.SendActivityAsync(MessageFactory.Carousel(userHelpCards)).ConfigureAwait(false);
 
                 default:
                     this.logger.LogInformation("Sending input to QnAMaker");
@@ -833,6 +838,12 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Bots
                     case Constants.DeleteCommand:
                         this.logger.LogInformation($"Delete card submit in channel {message.Value?.ToString()}");
                         await QnaHelper.DeleteQnaPair(turnContext, this.qnaServiceProvider, this.activityStorageProvider, this.logger, cancellationToken).ConfigureAwait(false);
+                        break;
+
+                    case Constants.TeamsHelp:
+                        this.logger.LogInformation($"Sending teams help card");
+                        var teamsHelpCards = TeamsHelpCard.GetTeamHelpCards(this.appBaseUri);
+                        await turnContext.SendActivityAsync(MessageFactory.Carousel(teamsHelpCards)).ConfigureAwait(false);
                         break;
 
                     case Constants.NoCommand:
