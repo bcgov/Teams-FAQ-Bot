@@ -61,11 +61,11 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
         private static Attachment GetCardwButton(string title, string text, string imageUri, string redirectUrl)
         {
             HeroCard helpCarouselCard = new HeroCard(){
-              Title = title;
-              Text = text;
+              Title = title,
+              Text = text,
               Images = new List<CardImage>()
               {
-                new CardImage(imageUri);
+                new CardImage(imageUri),
               }
               Buttons = new List<CardAction>(){
                 new CardAction(){
