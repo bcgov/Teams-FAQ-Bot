@@ -44,7 +44,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
 
         private static Attachment GetCard(string title, string text, string imageUri)
         {
-            HeroCard tourCarouselCard = new HeroCard()
+            HeroCard helpCarouselCard = new HeroCard()
             {
                 Title = title,
                 Text = text,
@@ -54,7 +54,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                 },
             };
 
-            return tourCarouselCard.ToAttachment();
+            return helpCarouselCard.ToAttachment();
         }
 
         // The Custom Carsol Card Constructor to include the button
@@ -76,7 +76,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
               },
             };
 
-            return tourCarouselCard.ToAttachment();
+            return helpCarouselCard.ToAttachment();
         }
     }
 }
