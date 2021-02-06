@@ -788,6 +788,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Bots
                     this.logger.LogInformation("Sending user teams help card");
                     var userHelpCards = TeamsHelpCard.GetUserHelpCards(this.appBaseUri);
                     await turnContext.SendActivityAsync(MessageFactory.Carousel(userHelpCards)).ConfigureAwait(false);
+                    break;
 
                 default:
                     this.logger.LogInformation("Sending input to QnAMaker");
