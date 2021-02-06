@@ -66,7 +66,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
               Images = new List<CardImage>()
               {
                 new CardImage(imageUri),
-              }
+              },
               Buttons = new List<CardAction>(){
                 new CardAction(){
                   Type = ActionTypes.OpenUrl,
