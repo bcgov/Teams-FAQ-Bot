@@ -36,8 +36,8 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
         {
             return new List<Attachment>()
             {
-                GetCardwButton(Strings.FunctionCardText1, Strings.FunctionCardText2, appBaseUri + "/content/Askaquestion.png","https://gww.blog.gov.bc.ca/unifiedcommunications/"),
-                //GetCard(Strings.AskAnExpertTitleText, Strings.AskAnExpertText2, appBaseUri + "/content/Expertinquiry.png"),
+                GetCardwButton("UC Blog Help Site", "This site has everything anyone could need to know about UC, if your question is regarding Skype, Skype Online Meetings, Headphones, or Deskphones this is where your answer likely is.", appBaseUri + "/content/Askaquestion.png","https://gww.blog.gov.bc.ca/unifiedcommunications/"),
+                GetCardwButton("Teams Sharepoint Help Site", "This site has all things Teams related including links to training sessions and FAQs, this is where your answer likely is.", appBaseUri + "/content/Expertinquiry.png", "https://bcgov.sharepoint.com/teams/Office365Portal"),
                 //GetCard(Strings.ShareFeedbackTitleText, Strings.FeedbackText1, appBaseUri + "/content/Sharefeedback.png"),
             };
         }
