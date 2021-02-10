@@ -1,4 +1,4 @@
-﻿// <copyright file="ResponseCard.cs" company="Microsoft">
+// <copyright file="ResponseCard.cs" company="Microsoft">
 // Copyright (c) Microsoft. All rights reserved.
 // </copyright>
 
@@ -172,13 +172,13 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                 // Adds the "Share feedback" button.
                 new AdaptiveSubmitAction
                 {
-                    Title = Strings.ShareFeedbackButtonText,
+                    Title = Strings.DidntAnswerQuestionButtonText,
                     Data = new ResponseCardPayload
                     {
                         MsTeams = new CardAction
                         {
                             Type = ActionTypes.MessageBack,
-                            DisplayText = Strings.ShareFeedbackDisplayText,
+                            DisplayText = Strings.DidntAnswerQuestionButtonText,
                             Text = Constants.ShareFeedback,
                         },
                         UserQuestion = userQuestion,
