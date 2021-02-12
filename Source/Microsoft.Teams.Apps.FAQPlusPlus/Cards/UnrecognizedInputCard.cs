@@ -37,18 +37,18 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                 {
                     new AdaptiveSubmitAction
                     {
-                        Title = Strings.AskAnExpertButtonText,
+                        Title = Strings.DidntAnswerQuestionButtonText,
                         Data = new ResponseCardPayload
                         {
                             MsTeams = new CardAction
                             {
                                 Type = ActionTypes.MessageBack,
-                                DisplayText = Strings.AskAnExpertDisplayText,
-                                Text = Constants.AskAnExpert,
+                                DisplayText = Strings.DidntAnswerQuestionButtonText,
+                                Text = Constants.ShareFeedback,
                             },
                             UserQuestion = userQuestion,
                         },
-                    },
+                    },                  
                 },
             };
 
