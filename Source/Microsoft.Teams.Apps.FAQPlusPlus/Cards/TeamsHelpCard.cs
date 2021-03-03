@@ -71,6 +71,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                 new CardAction(){
                   Type = ActionTypes.OpenUrl,
                   DisplayText = "Redirect",
+                  Text = "Redirect",
                   Value = redirectUrl,
                 },
               },
