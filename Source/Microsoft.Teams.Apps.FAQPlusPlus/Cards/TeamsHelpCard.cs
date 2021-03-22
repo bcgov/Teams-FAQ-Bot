@@ -36,9 +36,9 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
         {
             return new List<Attachment>()
             {
-                GetCardwButton("UC Blog Help Site", "This site has everything anyone could need to know about UC. If your question is regarding Skype, Skype Online Meetings, Headphones, or Deskphones this is where your answer likely is.", appBaseUri + "/content/Askaquestion.png","https://gww.blog.gov.bc.ca/unifiedcommunications/"),
-                GetCardwButton("Teams Sharepoint Help Site", "This site has all things Teams related including links to training sessions and FAQs. If your question is Teams related, this is where your answer likely is.", appBaseUri + "/content/Expertinquiry.png", "https://bcgov.sharepoint.com/teams/Office365Portal"),
-                GetCardwButton("Contact Us", "If there is a problem and you require a technician, you can contact the help desk.", appBaseUri + "/content/Sharefeedback.png", "https://bcgov.sharepoint.com/teams/Office365Portal/SitePages/Support.aspx"),
+                GetCardwButton(O365HelpTitle, O365HelpBody, appBaseUri + "/content/Askaquestion.png","https://gww.blog.gov.bc.ca/unifiedcommunications/"),
+                GetCardwButton(UCBlogTitle, UCBlogBody, appBaseUri + "/content/Expertinquiry.png", "https://bcgov.sharepoint.com/teams/Office365Portal"),
+                GetCardwButton(ContactUsTitle, ContactUsBody, appBaseUri + "/content/Sharefeedback.png", "https://bcgov.sharepoint.com/teams/Office365Portal/SitePages/Support.aspx"),
             };
         }
 
@@ -72,6 +72,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
                   Type = ActionTypes.OpenUrl,
                   DisplayText = "Redirect",
                   Text = "Redirect",
+                  Title = "Redirect",
                   Value = redirectUrl,
                 },
               },
