@@ -36,9 +36,9 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
         {
             return new List<Attachment>()
             {
-                GetCardwButton(Strings.O365HelpTitle, Strings.O365HelpBody, appBaseUri + "/content/BeachBot.png","https://bcgov.sharepoint.com/teams/Office365Portal"),
-                GetCardwButton(Strings.UCBlogTitle, Strings.UCBlogBody, appBaseUri + "/content/BotPNGBlog.png", "https://gww.blog.gov.bc.ca/unifiedcommunications/"),
-                GetCardwButton(Strings.ContactUsTitle, Strings.ContactUsBody, appBaseUri + "/content/BotPNGContactUs.png", "https://bcgov.sharepoint.com/teams/Office365Portal/SitePages/Support.aspx"),
+                GetCardwButton(Strings.O365HelpTitle, Strings.O365HelpBody, appBaseUri + "/content/BeachBot.png","https://bcgov.sharepoint.com/teams/Office365Portal", "Info Centre"),
+                GetCardwButton(Strings.UCBlogTitle, Strings.UCBlogBody, appBaseUri + "/content/BotPNGBlog.png", "https://gww.blog.gov.bc.ca/unifiedcommunications/", "UC Blog"),
+                GetCardwButton(Strings.ContactUsTitle, Strings.ContactUsBody, appBaseUri + "/content/BotPNGContactUs.png", "https://bcgov.sharepoint.com/teams/Office365Portal/SitePages/Support.aspx", "Contact Us"),
             };
         }
 
@@ -58,7 +58,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
         }
 
         // The Custom Carsol Card Constructor to include the button
-        private static Attachment GetCardwButton(string title, string text, string imageUri, string redirectUrl)
+        private static Attachment GetCardwButton(string title, string text, string imageUri, string redirectUrl, string buttonTitle)
         {
             HeroCard helpCarouselCard = new HeroCard(){
               Title = title,
@@ -70,9 +70,9 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
               Buttons = new List<CardAction>(){
                 new CardAction(){
                   Type = ActionTypes.OpenUrl,
-                  DisplayText = "Redirect",
-                  Text = "Redirect",
-                  Title = "Redirect",
+                  DisplayText = buttonTitle,
+                  Text = buttonTitle,
+                  Title = buttonTitle,
                   Value = redirectUrl,
                 },
               },
