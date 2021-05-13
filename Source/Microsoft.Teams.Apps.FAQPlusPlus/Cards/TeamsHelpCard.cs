@@ -21,7 +21,7 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
         {
             return new List<Attachment>()
             {
-                GetCardwButton(Strings.TeamNotificationHeaderText, Strings.TeamNotificationContent, appBaseUri + "/content/Notifications.png", "https://gww.blog.gov.bc.ca/unifiedcommunications/"),
+                GetCardwButton(Strings.TeamNotificationHeaderText, Strings.TeamNotificationContent, appBaseUri + "/content/Notifications.png", "https://gww.blog.gov.bc.ca/unifiedcommunications/", "String"),
                 //GetCard(Strings.TeamChatHeaderText, Strings.TeamChatContent, appBaseUri + "/content/Enduserchat.png"),
                 //GetCard(Strings.TeamTicketSystemHeaderText, Strings.TeamTicketSystemContent, appBaseUri + "/content/Ticketsystem.png"),
             };
