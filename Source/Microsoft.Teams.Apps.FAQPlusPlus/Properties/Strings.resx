@@ -639,7 +639,7 @@ I am your friendly Q&amp;A bot that helps you provide support to people who inte
     <comment>The title of the Contact Us card in the Teams Help Carousel</comment>
   </data>
   <data name="ContactUsBody" xml:space="preserve">
-    <value>If you have encountered a problem and require a technician, this support page provides you with options on how to reach us</value>
+    <value>If you have encountered a problem and require a technician, this support page provides you with options on how to reach us.</value>
     <comment>The body of the Contact Us card in the Teams Help Carousel</comment>
   </data>
 </root>
