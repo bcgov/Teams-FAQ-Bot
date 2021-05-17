@@ -36,8 +36,8 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Cards
         {
             return new List<Attachment>()
             {
-                GetCardwButton(Strings.O365HelpTitle, Strings.O365HelpBody, appBaseUri + "/content/BeachBot.png","https://bcgov.sharepoint.com/teams/Office365Portal", "Info Centre"),
-                GetCardwButton(Strings.UCBlogTitle, Strings.UCBlogBody, appBaseUri + "/content/BotPNGBlog.png", "https://gww.blog.gov.bc.ca/unifiedcommunications/", "UC Blog"),
+                GetCardwButton(Strings.O365HelpTitle, Strings.O365HelpBody, appBaseUri + "/content/BeachBot.png","https://bcgov.sharepoint.com/", "Info Centre"),
+                GetCardwButton(Strings.UCBlogTitle, Strings.UCBlogBody, appBaseUri + "/content/BotPNGBlog.png", "https://gww.blog.gov.bc.ca/unifiedcommunications/", "UC Site"),
                 GetCardwButton(Strings.ContactUsTitle, Strings.ContactUsBody, appBaseUri + "/content/BotPNGContactUs.png", "https://bcgov.sharepoint.com/teams/Office365Portal/SitePages/Support.aspx", "Contact Us"),
             };
         }

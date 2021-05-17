@@ -619,11 +619,11 @@ I am your friendly Q&amp;A bot that helps you provide support to people who inte
     <comment>A quick response message for the sharefeedback form</comment>
   </data>
   <data name="UCBlogTitle" xml:space="preserve">
-    <value>UC Blog Help Site</value>
+    <value>UC Help Site</value>
     <comment>The title of the UC Blog help site's card on the carousel</comment>
   </data>
   <data name="UCBlogBody" xml:space="preserve">
-    <value>The UC Blog Help Site contains all information pertaining to UC. The main topics being Skype, Teams, Meeting Hardware, or Meeting Room Tech.</value>
+    <value>The UC Help Site contains all information pertaining to UC. The main topics being Skype, Teams, Meeting Hardware, or Meeting Room Tech.</value>
     <comment>The body paragraphy of the UC Blog help Site Card in the Teams Help Carousel</comment>
   </data>
   <data name="O365HelpTitle" xml:space="preserve">
