@@ -104,5 +104,11 @@ namespace Microsoft.Teams.Apps.FAQPlusPlus.Common
         /// Represents the command text to identify the action.
         /// </summary>
         public const string PreviewCardCommandText = "previewcard";
+
+        /// <summary>
+        /// TeamsHelp - text that render the teams help card
+        /// Custom entry - 05/02/2021
+        /// </summary>
+        public const string TeamsHelp = "teams help";
     }
 }

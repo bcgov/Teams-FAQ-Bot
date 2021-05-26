@@ -611,10 +611,34 @@ I am your friendly Q&amp;A bot that helps you provide support to people who inte
   </data>
   <data name="FeedbackSubtitleText" xml:space="preserve">
     <value>Provide me feedback by filling the form below.
-      
-      or 
-      
+
+      or
+
       Submit a ticket in My Service Centre if you are encountering a problem.</value>
     <comment>A quick response message for the sharefeedback form</comment>
+  </data>
+  <data name="UCBlogTitle" xml:space="preserve">
+    <value>UC Help Site</value>
+    <comment>The title of the UC Blog help site's card on the carousel</comment>
+  </data>
+  <data name="UCBlogBody" xml:space="preserve">
+    <value>The UC Help Site contains all information pertaining to UC. The main topics being Skype, Teams, Meeting Hardware, or Meeting Room Tech.</value>
+    <comment>The body paragraphy of the UC Blog help Site Card in the Teams Help Carousel</comment>
+  </data>
+  <data name="O365HelpTitle" xml:space="preserve">
+    <value>Office 365 Information Centre</value>
+    <comment>The title of the sharepoint help site</comment>
+  </data>
+  <data name="O365HelpBody" xml:space="preserve">
+    <value>The Office 365 Information Centre contains all information pertaining to Office 365. The main topics being Exchange Online, OneDrive, SharePoint Online, and Teams.</value>
+    <comment>The body paragraph of the O365 Information Centre</comment>
+  </data>
+  <data name="ContactUsTitle" xml:space="preserve">
+    <value>Contact Us</value>
+    <comment>The title of the Contact Us card in the Teams Help Carousel</comment>
+  </data>
+  <data name="ContactUsBody" xml:space="preserve">
+    <value>If you have encountered a problem and require a technician, this support page provides you with options on how to reach us.</value>
+    <comment>The body of the Contact Us card in the Teams Help Carousel</comment>
   </data>
 </root>
