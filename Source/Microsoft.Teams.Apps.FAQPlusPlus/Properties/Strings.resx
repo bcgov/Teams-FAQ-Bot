@@ -36,7 +36,6 @@
     Classes that don't support this are serialized and stored with the
     mimetype set.
 
-
     The mimetype is used for serialized objects, and tells the
     ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
@@ -209,7 +208,7 @@ I am your friendly Q&amp;A bot that helps you provide support to people who inte
     <comment>Welcome message when bot is added to a new team.</comment>
   </data>
   <data name="CustomMessage" xml:space="preserve">
-    <value>I didn't find a matching answer for this question. Do you want me to ask an expert?</value>
+    <value>I didn't find a matching answer for this question.</value>
     <comment>Message when user asks random question to the bot.</comment>
   </data>
   <data name="QuestionAskedFactTitle" xml:space="preserve">
