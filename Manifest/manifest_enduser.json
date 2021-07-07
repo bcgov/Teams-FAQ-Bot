@@ -69,6 +69,13 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "<<appDomain>>"
+        "*.login.microsoftonline.com",
+        "*.sharepoint.com",
+        "*.sharepoint-df.com",
+        "spoppe-a.akamaihd.net",
+        "spoprod-a.akamaihd.net",
+        "resourceseng.blob.core.windows.net",
+        "msft.spoppe.com",
+        "<<appDomain>>"
   ]
 }
