@@ -1,4 +1,4 @@
-![Lifecycle:Dormant](https://img.shields.io/badge/Lifecycle-Dormant-007EC6)
+[![Lifecycle:Dormant](https://img.shields.io/badge/Lifecycle-Dormant-ff7f2a)]
 
 ---
 page_type: sample
